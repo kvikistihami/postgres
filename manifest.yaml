@@ -1,7 +1,7 @@
 type: install
 version: 1.7
 id: postgres-master-slave
-baseUrl: https://raw.githubusercontent.com/jelastic-jps/postgres/v2.0.0
+baseUrl: https://raw.githubusercontent.com/kvikistihami/postgres/v2.0.0
 homepage: https://www.virtuozzo.com/application-platform-docs/postgresql-database-replication
 logo: /images/postgres-70x70.png
 name: PostgreSQL Primary-Secondary Cluster
@@ -43,7 +43,8 @@ nodes:
   count: 2
   scalingMode: STATELESS
   nodeType: ${settings.nodeType}
-  password: ${fn.password}  
+  password: ${fn.password}
+  tag: 15.3-almalinux-9
   cluster:
     is_pgpool2: ${settings.is_pgpool2}
     
