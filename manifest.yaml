@@ -46,7 +46,7 @@ nodes:
   password: ${fn.password}
   tag: 15.3-almalinux-9
   cluster:
-    is_pgpool2: false
+    is_pgpool2: true
     
 onInstall:
   - cmd[${nodes.sqldb.master.id}]: jcm getPswd
